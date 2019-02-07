@@ -4,19 +4,19 @@ import java.math.BigInteger;
 
 public class Multiply {
 
-    public String multiply(String s1, String s2){
-        BigInteger b1 = new BigInteger(s1);
-        BigInteger b2 = new BigInteger(s2);
-        return b1.multiply(b2).toString();
+    public String multiply(String number1, String number2){
+        BigInteger bigInteger1 = new BigInteger(number1);
+        BigInteger bigInteger2 = new BigInteger(number2);
+        return bigInteger1.multiply(bigInteger2).toString();
     }
 
-    public String square(String s){
-        BigInteger number = new BigInteger(s);
+    public String square(String numberString){
+        BigInteger number = new BigInteger(numberString);
         return number.multiply(number).toString();
     }
 
-    public String factorial(String s){
-        BigInteger copyOfNumber = new BigInteger(s);
+    public String factorial(String numberString){
+        BigInteger copyOfNumber = new BigInteger(numberString);
         BigInteger subtract = new BigInteger("1");
         BigInteger result = new BigInteger("1");
         BigInteger zero = new BigInteger("0");
